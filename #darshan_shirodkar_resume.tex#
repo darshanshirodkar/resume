@@ -1,0 +1,226 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Darshan Shirodkar} & Email: \href{mailto:darshanshirodkar@gmail.com}{darshanshirodkar@gmail.com}\\
+  Toronto, ON & Mobile: {+1-437-237-6027} \\
+\end{tabular*}
+
+%-----------SUMMARY-------------------
+\section{Summary}
+I am currently working as a Senior Data Scientist at Shopify. I have over fourteen
+years of industry experience, solving data science problems using  machine learning, optimization
+and statistics.
+My research area during my master's degree was reinforcement learning; in particular,
+function approximation for value iteration and Q learning.
+Over the last three years at Shopify, I have also worked on
+developing my data engineering skills, building ETL pipelines using PySpark and
+DBT. 
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois at Urbana-Champaign}{Urbana, IL}
+      {Master of Science in Applied Mathematics; GPA: 3.96}{2009 -- 2011}
+      \resumeSubheading
+      {Indian Institute of Science}{Bengaluru, India}
+      {Master of Engineering in Signal Processing; GPA: 7.4/8}{2006 -- 2008}
+    \resumeSubheading
+      {KJ somaiya College of Engineering}{Mumbai, India}
+      {Bachelor of Engineering in Electronics}{2002 -- 2006}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Shopify}{Toronto, ON, Canada}
+      {Senior Data Scientist}{July 2022 - Present}
+     \begin{itemize}
+        \item
+          Collaborated with product team to generate insights about adoption, usage and performance of Shopify's product offerings.
+     \item
+          Ran A/B experiments to test new product features and various hypotheses.
+        \item
+          Modelled data and created pipelines in Pyspark to serve analytical reports to Shopify's customers (business owners running ecommerce through Shopify).
+        \item
+          Migrated data pipelines from Spark to DBT running on Bigquery.
+	\end{itemize}
+    \resumeSubheading
+      {Zendrive}{Bengaluru, India}
+      {Senior Data Scientist}{Jan 2021 - Jun 2022}
+	\begin{itemize}
+      \item Zendrive is a telematics company that helps insurance companies to provide usage based and driving behaviour based insurance to customers. 
+     \item Worked as the lead data scientist on the Public Transport Detection team. We developed algorithms based on map-matching and vehicular dynamics to classify
+      trips as ``car drive" vs ``public transit".
+\end{itemize}
+    \resumeSubheading
+      {Microsoft}{Bengaluru, India}
+      {Senior Data Scientist}{Dec 2018 - Jan 2021}
+\begin{itemize}
+\item I was part of the Bing Search Sponsored Ads team. We worked on ranking, allocation and pricing of sponsored search ads for all non-US markets.
+          \item Focused on machine learning algorithms for enhancement of product ads experience of users.
+          \item Built a realtime algorithm for ads layout optimization using reinforcement learning.
+          \item Performed ad-hoc data analyses to identify gaps in Bing and generate project ideas for improvement.
+          \item Carried out multiple root cause analyses to address advertisers' concerns and created timely fixes.
+\end{itemize}
+ \resumeSubheading
+      {Precision Wellness}{San Francisco, CA}
+      {Data Scientist - Consultant}{Feb 2018 - Nov 2018}
+\begin{itemize}
+\item Helped identify and build a statistical model for
+        predicting risk of cardiovascular disease based on various risk factors, and in scaling the algorithm implementation to millions of patient records using Pyspark.
+\end{itemize}
+\resumeSubheading
+	{Adobe}{Bengaluru, India}
+	{Data Science Manager}{Sep 2015 - Oct 2017}
+\begin{itemize}
+	\item Managed a small team of data scientists focused on the Adobe Media Optimizer, a digital advertising product that optimizes the advertising spend of customers by bidding on the right advertising opportunities.
+        \item Worked on real time estimation and adaptive control algorithms for display advertising bidder.
+        \item Created a simulation environment for testing out various real time strategies for bidding in online auctions.
+        \item Improved efficiency of advertising spend  by building accurate cost/revenue models from aggregated data and developing bid optimization algorithms.    
+\end{itemize}
+
+\resumeSubheading
+	{Pubmatic}{Pune, India}
+	{Data Scientist}{June 2013 - Sep 2015}
+\begin{itemize}
+	\item Worked on the horizontal machine learning team that spanned various problem areas.
+       \item Was technical lead on various revenue and infrastructure optimization problems.
+        \item Reduced infrastructure usage by 12\% by building classification models to filter out ‘low quality’ ad serving opportunities, using sampled data from billions of ad requests.
+        \item Designed linear programming based algorithm for ensuring guaranteed advertising campaign delivery.
+\end{itemize}
+
+\resumeSubheading
+	{TCS Innovation Lab}{Pune, India}
+	{Research Engineer}{Nov 2011 - Jun 2013}
+\begin{itemize}
+	  \item  Created simulations to demonstrate the efficiency of Multi-level Monte Carlo techqniques in pricing financial options.
+	\item Worked in collaboration with the HR department to help identify high attrition groups in the company by mining employee data using decision trees.   
+\end{itemize}
+
+  \resumeSubHeadingListEnd
+
+\section{Publications}
+  \resumeSubHeadingListStart
+    \item{
+    D. Shirodkar and S. Meyn, "Quasi stochastic approximation," Proceedings of the 2011 American Control Conference, San Francisco, CA, USA, 2011, pp. 2429-2435, doi: 10.1109/ACC.2011.5991485.
+    }
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source Python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{GitHub Visualization}
+%      {Data visualization of Git log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+%  \resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, SQL}
+   \item
+      \textbf{Tools \& Technologies}{: Pyspark, Hadoop, Google Cloud Services, Bigquery, Looker Studio}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
